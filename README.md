@@ -1,2 +1,3 @@
 # mddl
-Библиотеки для функционирования CMS
+
+meta driven development libraries
