@@ -1,0 +1,1 @@
+alter table meta.field_def_container add column seq int default 0;

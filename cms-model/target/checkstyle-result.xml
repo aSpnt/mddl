@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="10.3.1">
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/ExternalDictionaryValue_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/Entity_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/DictionaryExternalHeader_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/ExternalConnection_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/FieldGeometryValue_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/field/FieldDef_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/FieldValueTransition_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/EntityTemplate_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/EntityDefGroup_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/DictionaryExternal_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/EntityComment_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/FieldDefContainer_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/view/EntityDefRefFieldDef_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/FieldValue_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/EntityDefExternalHeader_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/base/BaseEntity_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/base/UidIdentEntity_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/entitydef/EntityDef_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/validation/FieldValidation_.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-model/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/entity/EntityDefMode_.java">
+</file>
+</checkstyle>

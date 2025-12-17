@@ -1,0 +1,1 @@
+alter table meta.dictionary_external add column response_param text default 'content';

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="10.3.1">
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/EntityTemplateConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/EntityCommentConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/EntityUtilsConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/FieldValidationConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/DictionaryExternalValueConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/FieldValueTransitionConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/EntityConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/FieldValueUtilsConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/DictionaryExternalConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/DictionaryExternalHeaderConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/CommonBaseRefConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/filter/EntityFilterConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/FieldValueConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/FieldGeometryValueConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/GeometryConverterImpl.java">
+</file>
+<file name="/Users/anatolijivanov/TOUR/UPR/upr-cms-service/cms-core/target/generated-sources/annotations/ru/softmachine/odyssey/backend/cms/converter/base/ReferenceMapperImpl.java">
+</file>
+</checkstyle>
