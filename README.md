@@ -1,6 +1,6 @@
-# upr-cms-service
+# meta driven service libs
 
-Сервис управляет статическим контентом витрины
+Библиотеки позволяют управлять динамическими сущностями на основе метаданных
 
 ## Требования к среде выполнения
 
@@ -66,15 +66,11 @@ JDK 21+
 | app.upload.compression.image.quality             | Коэффициент качества изображения после сжатия, от 0.0 (худшее) до 1.0 (лучшее) | 0.3                 |
 | app.upload.compression.image.scale               | Коэффициент масштабирования изображения при сжатии                             | 1.0                 |
 
-
-### Конфигурация по-умолчанию
-[application.yml](src/main/resources/application.yml)
-
 ## Развертывание на локальном окружении ##
 1. `mvn package`
 2. `docker-compose up`
 
 или
 
-1. `docker run --name=cms-pg -p 5432:5432 -e POSTGRES_PASSWORD=cms -e POSTGRES_USER=cms --rm docker.tourmachine.tech/softmachine/postgres:16-alpine`
+1. `docker run --name=cms-pg -p 5432:5432 -e POSTGRES_PASSWORD=cms -e POSTGRES_USER=cms --rm postgres:16-alpine`
 2. `mvn spring-boot:run`
