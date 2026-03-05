@@ -1,15 +1,17 @@
-package ru.softmachine.odyssey.backend.cms.entity;
+package com.aspnt.mddl.entity;
 
+import com.aspnt.mddl.entity.Entity;
+import com.aspnt.mddl.entity.FieldValueTransition;
 import jakarta.annotation.Generated;
 import jakarta.persistence.metamodel.EntityType;
 import jakarta.persistence.metamodel.SingularAttribute;
 import jakarta.persistence.metamodel.StaticMetamodel;
 import java.util.List;
-import ru.softmachine.odyssey.backend.cms.entity.field.FieldDef;
+import com.aspnt.mddl.entity.field.FieldDef;
 
 @StaticMetamodel(FieldValueTransition.class)
 @Generated("org.hibernate.processor.HibernateProcessor")
-public abstract class FieldValueTransition_ extends ru.softmachine.odyssey.backend.cms.entity.base.BaseEntity_ {
+public abstract class FieldValueTransition_ extends com.aspnt.mddl.entity.base.BaseEntity_ {
 
 	public static final String ENTITY_TO = "entityTo";
 	public static final String FIELD_DEF = "fieldDef";
@@ -25,74 +27,74 @@ public abstract class FieldValueTransition_ extends ru.softmachine.odyssey.backe
 	public static final String ENTITY_ACTIVE_STATUS = "entityActiveStatus";
 	public static final String SEQ = "seq";
 
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition#entityTo
+	 * @see FieldValueTransition#entityTo
 	 **/
 	public static volatile SingularAttribute<FieldValueTransition, Entity> entityTo;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition#fieldDef
+	 * @see FieldValueTransition#fieldDef
 	 **/
 	public static volatile SingularAttribute<FieldValueTransition, FieldDef> fieldDef;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition#message
+	 * @see FieldValueTransition#message
 	 **/
 	public static volatile SingularAttribute<FieldValueTransition, String> message;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition#commentNote
+	 * @see FieldValueTransition#commentNote
 	 **/
 	public static volatile SingularAttribute<FieldValueTransition, String> commentNote;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition#updateLastStatusTs
+	 * @see FieldValueTransition#updateLastStatusTs
 	 **/
 	public static volatile SingularAttribute<FieldValueTransition, Boolean> updateLastStatusTs;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition#commentTitle
+	 * @see FieldValueTransition#commentTitle
 	 **/
 	public static volatile SingularAttribute<FieldValueTransition, String> commentTitle;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition#showButton
+	 * @see FieldValueTransition#showButton
 	 **/
 	public static volatile SingularAttribute<FieldValueTransition, Boolean> showButton;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition#commentRequired
+	 * @see FieldValueTransition#commentRequired
 	 **/
 	public static volatile SingularAttribute<FieldValueTransition, Boolean> commentRequired;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition#entityFrom
+	 * @see FieldValueTransition#entityFrom
 	 **/
 	public static volatile SingularAttribute<FieldValueTransition, Entity> entityFrom;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition#fieldCodes
+	 * @see FieldValueTransition#fieldCodes
 	 **/
 	public static volatile SingularAttribute<FieldValueTransition, List<String>> fieldCodes;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition#needComment
+	 * @see FieldValueTransition#needComment
 	 **/
 	public static volatile SingularAttribute<FieldValueTransition, Boolean> needComment;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition#entityActiveStatus
+	 * @see FieldValueTransition#entityActiveStatus
 	 **/
 	public static volatile SingularAttribute<FieldValueTransition, Boolean> entityActiveStatus;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition
+	 * @see FieldValueTransition
 	 **/
 	public static volatile EntityType<FieldValueTransition> class_;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition#seq
+	 * @see FieldValueTransition#seq
 	 **/
 	public static volatile SingularAttribute<FieldValueTransition, Integer> seq;
 

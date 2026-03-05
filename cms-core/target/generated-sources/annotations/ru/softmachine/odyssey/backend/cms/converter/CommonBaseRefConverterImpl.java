@@ -1,20 +1,23 @@
-package ru.softmachine.odyssey.backend.cms.converter;
+package com.aspnt.mddl.converter;
 
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.processing.Generated;
+
+import com.aspnt.mddl.converter.CommonBaseRefConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import ru.softmachine.odyssey.backend.cms.converter.base.ReferenceMapper;
-import ru.softmachine.odyssey.backend.cms.dto.base.BaseDto;
-import ru.softmachine.odyssey.backend.cms.dto.base.BaseRef;
-import ru.softmachine.odyssey.backend.cms.dto.field.BaseFieldDefDto;
-import ru.softmachine.odyssey.backend.cms.entity.EntityDefMode;
-import ru.softmachine.odyssey.backend.cms.entity.field.FieldDef;
+import com.aspnt.mddl.converter.base.ReferenceMapper;
+import com.aspnt.mddl.dto.base.BaseDto;
+import com.aspnt.mddl.dto.base.BaseRef;
+import com.aspnt.mddl.dto.field.BaseFieldDefDto;
+import com.aspnt.mddl.entity.EntityDefMode;
+import com.aspnt.mddl.entity.entitydef.EntityDef;
+import com.aspnt.mddl.entity.field.FieldDef;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-12-17T17:26:12+0500",
+    date = "2026-03-04T20:17:50+0500",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 21.0.2 (Eclipse Adoptium)"
 )
 @Component
@@ -86,7 +89,7 @@ public class CommonBaseRefConverterImpl extends CommonBaseRefConverter {
     }
 
     @Override
-    public FieldDef baseFieldDefMapperByBAseDto(BaseDto ref) {
+    public FieldDef baseFieldDefMapperByBaseDto(BaseDto ref) {
         if ( ref == null ) {
             return null;
         }
@@ -94,6 +97,19 @@ public class CommonBaseRefConverterImpl extends CommonBaseRefConverter {
         FieldDef fieldDef = referenceMapper.resolve( ref, FieldDef.class );
 
         return fieldDef;
+    }
+
+    @Override
+    EntityDef baseRefToEntityDef(BaseRef baseRef) {
+        if ( baseRef == null ) {
+            return null;
+        }
+
+        EntityDef entityDef = referenceMapper.resolve( baseRef, EntityDef.class );
+
+        entityDef.setId( baseRef.getId() );
+
+        return entityDef;
     }
 
     protected BaseRef entityDefModeToBaseRef(EntityDefMode entityDefMode) {

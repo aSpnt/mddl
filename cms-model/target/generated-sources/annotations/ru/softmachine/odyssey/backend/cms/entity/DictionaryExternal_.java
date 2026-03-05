@@ -1,5 +1,7 @@
-package ru.softmachine.odyssey.backend.cms.entity;
+package com.aspnt.mddl.entity;
 
+import com.aspnt.mddl.entity.DictionaryExternal;
+import com.aspnt.mddl.entity.DictionaryExternalHeader;
 import jakarta.annotation.Generated;
 import jakarta.persistence.metamodel.EntityType;
 import jakarta.persistence.metamodel.ListAttribute;
@@ -7,12 +9,12 @@ import jakarta.persistence.metamodel.SingularAttribute;
 import jakarta.persistence.metamodel.StaticMetamodel;
 import java.util.List;
 import java.util.Map;
-import ru.softmachine.odyssey.backend.cms.dto.DictionaryHttpMethod;
-import ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef;
+import com.aspnt.mddl.dto.DictionaryHttpMethod;
+import com.aspnt.mddl.entity.entitydef.EntityDef;
 
 @StaticMetamodel(DictionaryExternal.class)
 @Generated("org.hibernate.processor.HibernateProcessor")
-public abstract class DictionaryExternal_ extends ru.softmachine.odyssey.backend.cms.entity.base.BaseEntity_ {
+public abstract class DictionaryExternal_ extends com.aspnt.mddl.entity.base.BaseEntity_ {
 
 	public static final String HEADERS = "headers";
 	public static final String CODE = "code";
@@ -32,94 +34,94 @@ public abstract class DictionaryExternal_ extends ru.softmachine.odyssey.backend
 	public static final String ENTITY_DEF = "entityDef";
 	public static final String ID_PARAM = "idParam";
 
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#headers
+	 * @see DictionaryExternal#headers
 	 **/
 	public static volatile ListAttribute<DictionaryExternal, DictionaryExternalHeader> headers;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#code
+	 * @see DictionaryExternal#code
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, String> code;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#method
+	 * @see DictionaryExternal#method
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, DictionaryHttpMethod> method;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#isSpel
+	 * @see DictionaryExternal#isSpel
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, Boolean> isSpel;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#imgExpression
+	 * @see DictionaryExternal#imgExpression
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, String> imgExpression;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#nameParam
+	 * @see DictionaryExternal#nameParam
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, String> nameParam;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#url
+	 * @see DictionaryExternal#url
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, String> url;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#descriptionParam
+	 * @see DictionaryExternal#descriptionParam
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, String> descriptionParam;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#descriptionExpression
+	 * @see DictionaryExternal#descriptionExpression
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, String> descriptionExpression;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#defaultBody
+	 * @see DictionaryExternal#defaultBody
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, Map<String,Object>> defaultBody;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#imgParam
+	 * @see DictionaryExternal#imgParam
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, String> imgParam;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#refExpression
+	 * @see DictionaryExternal#refExpression
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, String> refExpression;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#param
+	 * @see DictionaryExternal#param
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, List<String>> param;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#name
+	 * @see DictionaryExternal#name
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, String> name;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#responseParam
+	 * @see DictionaryExternal#responseParam
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, String> responseParam;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#entityDef
+	 * @see DictionaryExternal#entityDef
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, EntityDef> entityDef;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal#idParam
+	 * @see DictionaryExternal#idParam
 	 **/
 	public static volatile SingularAttribute<DictionaryExternal, String> idParam;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal
+	 * @see DictionaryExternal
 	 **/
 	public static volatile EntityType<DictionaryExternal> class_;
 

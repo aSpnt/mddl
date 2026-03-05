@@ -1,16 +1,17 @@
-package ru.softmachine.odyssey.backend.cms.entity.validation;
+package com.aspnt.mddl.entity.validation;
 
+import com.aspnt.mddl.entity.validation.FieldValidation;
 import jakarta.annotation.Generated;
 import jakarta.persistence.metamodel.EntityType;
 import jakarta.persistence.metamodel.SingularAttribute;
 import jakarta.persistence.metamodel.StaticMetamodel;
 import java.util.List;
-import ru.softmachine.odyssey.backend.cms.dto.validation.ValidationType;
-import ru.softmachine.odyssey.backend.cms.entity.field.FieldDef;
+import com.aspnt.mddl.dto.validation.ValidationType;
+import com.aspnt.mddl.entity.field.FieldDef;
 
 @StaticMetamodel(FieldValidation.class)
 @Generated("org.hibernate.processor.HibernateProcessor")
-public abstract class FieldValidation_ extends ru.softmachine.odyssey.backend.cms.entity.base.BaseEntity_ {
+public abstract class FieldValidation_ extends com.aspnt.mddl.entity.base.BaseEntity_ {
 
 	public static final String TEXT_VALUE = "textValue";
 	public static final String INT_VALUE = "intValue";
@@ -20,44 +21,44 @@ public abstract class FieldValidation_ extends ru.softmachine.odyssey.backend.cm
 	public static final String TYPE = "type";
 	public static final String MESSAGE = "message";
 
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.validation.FieldValidation#textValue
+	 * @see FieldValidation#textValue
 	 **/
 	public static volatile SingularAttribute<FieldValidation, String> textValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.validation.FieldValidation#intValue
+	 * @see FieldValidation#intValue
 	 **/
 	public static volatile SingularAttribute<FieldValidation, Integer> intValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.validation.FieldValidation#textArrayValue
+	 * @see FieldValidation#textArrayValue
 	 **/
 	public static volatile SingularAttribute<FieldValidation, List<String>> textArrayValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.validation.FieldValidation#doubleValue
+	 * @see FieldValidation#doubleValue
 	 **/
 	public static volatile SingularAttribute<FieldValidation, Double> doubleValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.validation.FieldValidation#fieldDef
+	 * @see FieldValidation#fieldDef
 	 **/
 	public static volatile SingularAttribute<FieldValidation, FieldDef> fieldDef;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.validation.FieldValidation#type
+	 * @see FieldValidation#type
 	 **/
 	public static volatile SingularAttribute<FieldValidation, ValidationType> type;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.validation.FieldValidation#message
+	 * @see FieldValidation#message
 	 **/
 	public static volatile SingularAttribute<FieldValidation, String> message;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.validation.FieldValidation
+	 * @see FieldValidation
 	 **/
 	public static volatile EntityType<FieldValidation> class_;
 

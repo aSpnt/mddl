@@ -1,5 +1,6 @@
-package ru.softmachine.odyssey.backend.cms.entity.base;
+package com.aspnt.mddl.entity.base;
 
+import com.aspnt.mddl.entity.base.UidIdentEntity;
 import jakarta.annotation.Generated;
 import jakarta.persistence.metamodel.MappedSuperclassType;
 import jakarta.persistence.metamodel.SingularAttribute;
@@ -12,14 +13,14 @@ public abstract class UidIdentEntity_ {
 
 	public static final String ID = "id";
 
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.base.UidIdentEntity#id
+	 * @see UidIdentEntity#id
 	 **/
 	public static volatile SingularAttribute<UidIdentEntity, UUID> id;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.base.UidIdentEntity
+	 * @see UidIdentEntity
 	 **/
 	public static volatile MappedSuperclassType<UidIdentEntity> class_;
 

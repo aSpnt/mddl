@@ -1,25 +1,26 @@
-package ru.softmachine.odyssey.backend.cms.entity.entitydef;
+package com.aspnt.mddl.entity.entitydef;
 
+import com.aspnt.mddl.entity.entitydef.EntityDef;
 import jakarta.annotation.Generated;
 import jakarta.persistence.metamodel.EntityType;
 import jakarta.persistence.metamodel.ListAttribute;
 import jakarta.persistence.metamodel.SingularAttribute;
 import jakarta.persistence.metamodel.StaticMetamodel;
 import java.util.Map;
-import ru.softmachine.odyssey.backend.cms.dto.DictionaryHttpMethod;
-import ru.softmachine.odyssey.backend.cms.dto.EntityDefStatus;
-import ru.softmachine.odyssey.backend.cms.dto.GlobalSearchType;
-import ru.softmachine.odyssey.backend.cms.dto.provider.ProviderType;
-import ru.softmachine.odyssey.backend.cms.entity.Entity;
-import ru.softmachine.odyssey.backend.cms.entity.EntityDefExternalHeader;
-import ru.softmachine.odyssey.backend.cms.entity.EntityDefGroup;
-import ru.softmachine.odyssey.backend.cms.entity.EntityDefMode;
-import ru.softmachine.odyssey.backend.cms.entity.EntityTemplate;
-import ru.softmachine.odyssey.backend.cms.entity.FieldDefContainer;
+import com.aspnt.mddl.dto.DictionaryHttpMethod;
+import com.aspnt.mddl.dto.EntityDefStatus;
+import com.aspnt.mddl.dto.GlobalSearchType;
+import com.aspnt.mddl.dto.provider.ProviderType;
+import com.aspnt.mddl.entity.Entity;
+import com.aspnt.mddl.entity.EntityDefExternalHeader;
+import com.aspnt.mddl.entity.EntityDefGroup;
+import com.aspnt.mddl.entity.EntityDefMode;
+import com.aspnt.mddl.entity.EntityTemplate;
+import com.aspnt.mddl.entity.FieldDefContainer;
 
 @StaticMetamodel(EntityDef.class)
 @Generated("org.hibernate.processor.HibernateProcessor")
-public abstract class EntityDef_ extends ru.softmachine.odyssey.backend.cms.entity.base.BaseEntity_ {
+public abstract class EntityDef_ extends com.aspnt.mddl.entity.base.BaseEntity_ {
 
 	public static final String ALLOW_DND = "allowDnd";
 	public static final String CONTAINER = "container";
@@ -55,174 +56,174 @@ public abstract class EntityDef_ extends ru.softmachine.odyssey.backend.cms.enti
 	public static final String NOMINATIVE = "nominative";
 	public static final String STATUS = "status";
 
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#allowDnd
+	 * @see EntityDef#allowDnd
 	 **/
 	public static volatile SingularAttribute<EntityDef, Boolean> allowDnd;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#container
+	 * @see EntityDef#container
 	 **/
 	public static volatile SingularAttribute<EntityDef, FieldDefContainer> container;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#code
+	 * @see EntityDef#code
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> code;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#modes
+	 * @see EntityDef#modes
 	 **/
 	public static volatile ListAttribute<EntityDef, EntityDefMode> modes;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#responseTotalName
+	 * @see EntityDef#responseTotalName
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> responseTotalName;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#pageFilterName
+	 * @see EntityDef#pageFilterName
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> pageFilterName;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#providerType
+	 * @see EntityDef#providerType
 	 **/
 	public static volatile SingularAttribute<EntityDef, ProviderType> providerType;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#singletonEntity
+	 * @see EntityDef#singletonEntity
 	 **/
 	public static volatile SingularAttribute<EntityDef, Entity> singletonEntity;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#root
+	 * @see EntityDef#root
 	 **/
 	public static volatile SingularAttribute<EntityDef, Boolean> root;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#successDeleteMessage
+	 * @see EntityDef#successDeleteMessage
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> successDeleteMessage;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#responseParam
+	 * @see EntityDef#responseParam
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> responseParam;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#onDeleteConflictMessage
+	 * @see EntityDef#onDeleteConflictMessage
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> onDeleteConflictMessage;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#genitive
+	 * @see EntityDef#genitive
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> genitive;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef
+	 * @see EntityDef
 	 **/
 	public static volatile EntityType<EntityDef> class_;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#templateNote
+	 * @see EntityDef#templateNote
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> templateNote;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#globalSearchType
+	 * @see EntityDef#globalSearchType
 	 **/
 	public static volatile SingularAttribute<EntityDef, GlobalSearchType> globalSearchType;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#showComments
+	 * @see EntityDef#showComments
 	 **/
 	public static volatile SingularAttribute<EntityDef, Boolean> showComments;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#pageFilterSizeName
+	 * @see EntityDef#pageFilterSizeName
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> pageFilterSizeName;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#singleton
+	 * @see EntityDef#singleton
 	 **/
 	public static volatile SingularAttribute<EntityDef, Boolean> singleton;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#headers
+	 * @see EntityDef#headers
 	 **/
 	public static volatile ListAttribute<EntityDef, EntityDefExternalHeader> headers;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#method
+	 * @see EntityDef#method
 	 **/
 	public static volatile SingularAttribute<EntityDef, DictionaryHttpMethod> method;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#templates
+	 * @see EntityDef#templates
 	 **/
 	public static volatile ListAttribute<EntityDef, EntityTemplate> templates;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#version
+	 * @see EntityDef#version
 	 **/
 	public static volatile SingularAttribute<EntityDef, Long> version;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#url
+	 * @see EntityDef#url
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> url;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#defaultBody
+	 * @see EntityDef#defaultBody
 	 **/
 	public static volatile SingularAttribute<EntityDef, Map<String,Object>> defaultBody;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#successCreateMessage
+	 * @see EntityDef#successCreateMessage
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> successCreateMessage;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#allowInlineCreation
+	 * @see EntityDef#allowInlineCreation
 	 **/
 	public static volatile SingularAttribute<EntityDef, Boolean> allowInlineCreation;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#entityDefGroup
+	 * @see EntityDef#entityDefGroup
 	 **/
 	public static volatile SingularAttribute<EntityDef, EntityDefGroup> entityDefGroup;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#name
+	 * @see EntityDef#name
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> name;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#urlList
+	 * @see EntityDef#urlList
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> urlList;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#pageFilterNumberName
+	 * @see EntityDef#pageFilterNumberName
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> pageFilterNumberName;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#lockCreating
+	 * @see EntityDef#lockCreating
 	 **/
 	public static volatile SingularAttribute<EntityDef, Boolean> lockCreating;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#nominative
+	 * @see EntityDef#nominative
 	 **/
 	public static volatile SingularAttribute<EntityDef, String> nominative;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef#status
+	 * @see EntityDef#status
 	 **/
 	public static volatile SingularAttribute<EntityDef, EntityDefStatus> status;
 

@@ -3,13 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>ru.softmachine.odyssey.backend</groupId>
-        <artifactId>upr-cms-service</artifactId>
-        <version>0.1.0</version>
+        <groupId>com.aspnt</groupId>
+        <artifactId>mddl</artifactId>
+        <version>0.2.0</version>
     </parent>
-    <artifactId>cms-model</artifactId>
-    <version>0.1.0</version>
-    <name>UPR CMS Model</name>
+    <artifactId>mddl-model</artifactId>
+    <name>mddl model</name>
     <packaging>jar</packaging>
 
     <build>
@@ -39,9 +38,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>ru.softmachine.odyssey.backend</groupId>
-            <artifactId>cms-lib</artifactId>
-            <version>0.1.0</version>
+            <groupId>com.aspnt</groupId>
+            <artifactId>mddl-lib</artifactId>
+            <version>0.2.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -67,11 +66,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>ru.softmachine.odyssey.backend</groupId>
-            <artifactId>odyssey-webclient-starter</artifactId>
-            <version>${odyssey-commons.version}</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate.orm</groupId>
@@ -146,18 +140,6 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-contract-wiremock</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>ru.softmachine.odyssey.backend</groupId>
-            <artifactId>odyssey-testcontainers-starter</artifactId>
-            <version>${odyssey-commons.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>ru.softmachine.odyssey.backend</groupId>
-            <artifactId>odyssey-test-utils</artifactId>
-            <version>${odyssey-commons.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>

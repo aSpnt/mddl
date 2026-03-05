@@ -1,16 +1,17 @@
-package ru.softmachine.odyssey.backend.cms.entity;
+package com.aspnt.mddl.entity;
 
+import com.aspnt.mddl.entity.FieldDefContainer;
 import jakarta.annotation.Generated;
 import jakarta.persistence.metamodel.EntityType;
 import jakarta.persistence.metamodel.ListAttribute;
 import jakarta.persistence.metamodel.SingularAttribute;
 import jakarta.persistence.metamodel.StaticMetamodel;
-import ru.softmachine.odyssey.backend.cms.dto.base.FieldDefContainerType;
-import ru.softmachine.odyssey.backend.cms.entity.field.FieldDef;
+import com.aspnt.mddl.dto.base.FieldDefContainerType;
+import com.aspnt.mddl.entity.field.FieldDef;
 
 @StaticMetamodel(FieldDefContainer.class)
 @Generated("org.hibernate.processor.HibernateProcessor")
-public abstract class FieldDefContainer_ extends ru.softmachine.odyssey.backend.cms.entity.base.BaseEntity_ {
+public abstract class FieldDefContainer_ extends com.aspnt.mddl.entity.base.BaseEntity_ {
 
 	public static final String DISABLE_CONDITION = "disableCondition";
 	public static final String PARENT = "parent";
@@ -22,54 +23,54 @@ public abstract class FieldDefContainer_ extends ru.softmachine.odyssey.backend.
 	public static final String CHILD_CONTAINERS = "childContainers";
 	public static final String SEQ = "seq";
 
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldDefContainer#disableCondition
+	 * @see FieldDefContainer#disableCondition
 	 **/
 	public static volatile SingularAttribute<FieldDefContainer, String> disableCondition;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldDefContainer#parent
+	 * @see FieldDefContainer#parent
 	 **/
 	public static volatile SingularAttribute<FieldDefContainer, FieldDefContainer> parent;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldDefContainer#visibleCondition
+	 * @see FieldDefContainer#visibleCondition
 	 **/
 	public static volatile SingularAttribute<FieldDefContainer, String> visibleCondition;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldDefContainer#code
+	 * @see FieldDefContainer#code
 	 **/
 	public static volatile SingularAttribute<FieldDefContainer, String> code;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldDefContainer#name
+	 * @see FieldDefContainer#name
 	 **/
 	public static volatile SingularAttribute<FieldDefContainer, String> name;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldDefContainer#type
+	 * @see FieldDefContainer#type
 	 **/
 	public static volatile SingularAttribute<FieldDefContainer, FieldDefContainerType> type;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldDefContainer#fields
+	 * @see FieldDefContainer#fields
 	 **/
 	public static volatile ListAttribute<FieldDefContainer, FieldDef> fields;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldDefContainer
+	 * @see FieldDefContainer
 	 **/
 	public static volatile EntityType<FieldDefContainer> class_;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldDefContainer#childContainers
+	 * @see FieldDefContainer#childContainers
 	 **/
 	public static volatile ListAttribute<FieldDefContainer, FieldDefContainer> childContainers;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldDefContainer#seq
+	 * @see FieldDefContainer#seq
 	 **/
 	public static volatile SingularAttribute<FieldDefContainer, Integer> seq;
 

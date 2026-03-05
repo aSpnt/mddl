@@ -1,0 +1,85 @@
+spring:
+  max-in-memory-size: 1024  # KB
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  main:
+    allow-circular-references: true
+  jackson:
+    default-property-inclusion: non_null
+  application:
+    name: upr-cms-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cms
+    username: cms
+    password: cms
+    driver-class-name: org.postgresql.Driver
+server:
+  shutdown: graceful
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+app:
+  language:
+    default: russian # должно соответствовать regclass postgres
+  cache:
+    enabled: false
+    global-ttl: 60 # minutes
+  slug:
+    separator: "-"
+  page:
+    default-page-size: 50
+    default-tag-size: 30
+  rest-entity-web-client:
+    buffer-size-mb: 16
+  mapper:
+    empty-as-null: true
+  loader:
+    max-depth: 3
+  context:
+#    dictionary-context:
+    apikey: s9R2V2I3YS9IXzELqeymiM6BL7Q1UdpN
+    b2bUrl: https://b2b-sandbox-hermes.tourmachine.tech
+    bffUrl: http://bff-service:8080
+  upload:
+    prefix: cms/
+    compression:
+      compressionEnabled: true
+      video:
+        compress-min-length: 51200    # Сжимать, если больше N КБ
+        captureWidth: 1920
+        captureHeight: 1080
+        tune: zerolatency
+        video-bitrate: 2000000        # 2000 kb/s
+        quality: 30                   # 0 — наибольшее, 52 — наименьшее
+        preset: medium
+        target-format: mp4
+        preserved-format: webm        # Сохраняем эти форматы при сжатии
+        audio-quality: 0
+        audio-bitrate: 192000
+        audio-sample-rate: 44100
+        audio-channels: 2
+      image:
+        compress-min-length: 200
+        quality: 0.3
+        scale: 1.0
+        target-format: jpg
+    provider:
+      s3:
+        endpoint: https://storage.yandexcloud.net
+        accessKey: fx6KGS17YJsp1xH-TWys
+        secret: rereO4IuHGA2LI_GElx4CkI60bzNRviAwDWn1rlm
+        region: ru-central1a
+        bucket: odyssey-dev
+
+springdoc:
+  swagger-ui:
+    config-url: /cms-service/v3/api-docs/swagger-config
+    url: /cms-service/v3/api-docs

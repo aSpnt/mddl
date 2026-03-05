@@ -1,28 +1,33 @@
-package ru.softmachine.odyssey.backend.cms.converter;
+package com.aspnt.mddl.converter;
 
 import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.processing.Generated;
+
+import com.aspnt.mddl.converter.DictionaryExternalValueConverter;
+import com.aspnt.mddl.converter.EntityConverter;
+import com.aspnt.mddl.converter.FieldGeometryValueConverter;
+import com.aspnt.mddl.converter.FieldValueUtilsConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import ru.softmachine.odyssey.backend.cms.dto.FieldGeometryValueDto;
-import ru.softmachine.odyssey.backend.cms.dto.FieldValueDto;
-import ru.softmachine.odyssey.backend.cms.dto.base.BaseExternalRef;
-import ru.softmachine.odyssey.backend.cms.dto.base.BaseRef;
-import ru.softmachine.odyssey.backend.cms.dto.entity.EntityDto;
-import ru.softmachine.odyssey.backend.cms.dto.field.BaseFieldDefDto;
-import ru.softmachine.odyssey.backend.cms.entity.Entity;
-import ru.softmachine.odyssey.backend.cms.entity.EntityDefMode;
-import ru.softmachine.odyssey.backend.cms.entity.ExternalDictionaryValue;
-import ru.softmachine.odyssey.backend.cms.entity.FieldGeometryValue;
-import ru.softmachine.odyssey.backend.cms.entity.FieldValue;
-import ru.softmachine.odyssey.backend.cms.entity.field.FieldDef;
+import com.aspnt.mddl.dto.FieldGeometryValueDto;
+import com.aspnt.mddl.dto.FieldValueDto;
+import com.aspnt.mddl.dto.base.BaseExternalRef;
+import com.aspnt.mddl.dto.base.BaseRef;
+import com.aspnt.mddl.dto.entity.EntityDto;
+import com.aspnt.mddl.dto.field.BaseFieldDefDto;
+import com.aspnt.mddl.entity.Entity;
+import com.aspnt.mddl.entity.EntityDefMode;
+import com.aspnt.mddl.entity.ExternalDictionaryValue;
+import com.aspnt.mddl.entity.FieldGeometryValue;
+import com.aspnt.mddl.entity.FieldValue;
+import com.aspnt.mddl.entity.field.FieldDef;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-12-17T17:26:12+0500",
+    date = "2026-03-04T20:17:50+0500",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 21.0.2 (Eclipse Adoptium)"
 )
 @Component

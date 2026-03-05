@@ -1,1 +1,1 @@
-ru.softmachine.odyssey.backend.cms.dto.base.FieldType 
+com.aspnt.mddl.dto.base.FieldType

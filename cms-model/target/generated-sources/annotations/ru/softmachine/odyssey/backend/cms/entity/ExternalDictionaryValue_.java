@@ -1,5 +1,7 @@
-package ru.softmachine.odyssey.backend.cms.entity;
+package com.aspnt.mddl.entity;
 
+import com.aspnt.mddl.entity.ExternalDictionaryValue;
+import com.aspnt.mddl.entity.FieldValue;
 import jakarta.annotation.Generated;
 import jakarta.persistence.metamodel.EntityType;
 import jakarta.persistence.metamodel.SingularAttribute;
@@ -20,54 +22,54 @@ public abstract class ExternalDictionaryValue_ {
 	public static final String FIELD_VALUE = "fieldValue";
 	public static final String SEQ = "seq";
 
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.ExternalDictionaryValue#img
+	 * @see ExternalDictionaryValue#img
 	 **/
 	public static volatile SingularAttribute<ExternalDictionaryValue, String> img;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.ExternalDictionaryValue#ref
+	 * @see ExternalDictionaryValue#ref
 	 **/
 	public static volatile SingularAttribute<ExternalDictionaryValue, String> ref;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.ExternalDictionaryValue#name
+	 * @see ExternalDictionaryValue#name
 	 **/
 	public static volatile SingularAttribute<ExternalDictionaryValue, String> name;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.ExternalDictionaryValue#description
+	 * @see ExternalDictionaryValue#description
 	 **/
 	public static volatile SingularAttribute<ExternalDictionaryValue, String> description;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.ExternalDictionaryValue#id
+	 * @see ExternalDictionaryValue#id
 	 **/
 	public static volatile SingularAttribute<ExternalDictionaryValue, String> id;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.ExternalDictionaryValue#updatedTs
+	 * @see ExternalDictionaryValue#updatedTs
 	 **/
 	public static volatile SingularAttribute<ExternalDictionaryValue, ZonedDateTime> updatedTs;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.ExternalDictionaryValue
+	 * @see ExternalDictionaryValue
 	 **/
 	public static volatile EntityType<ExternalDictionaryValue> class_;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.ExternalDictionaryValue#createdTs
+	 * @see ExternalDictionaryValue#createdTs
 	 **/
 	public static volatile SingularAttribute<ExternalDictionaryValue, ZonedDateTime> createdTs;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.ExternalDictionaryValue#fieldValue
+	 * @see ExternalDictionaryValue#fieldValue
 	 **/
 	public static volatile SingularAttribute<ExternalDictionaryValue, FieldValue> fieldValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.ExternalDictionaryValue#seq
+	 * @see ExternalDictionaryValue#seq
 	 **/
 	public static volatile SingularAttribute<ExternalDictionaryValue, Integer> seq;
 

@@ -1,5 +1,6 @@
-package ru.softmachine.odyssey.backend.cms.entity.view;
+package com.aspnt.mddl.entity.view;
 
+import com.aspnt.mddl.entity.view.EntityDefRefFieldDef;
 import jakarta.annotation.Generated;
 import jakarta.persistence.metamodel.EntityType;
 import jakarta.persistence.metamodel.SingularAttribute;
@@ -15,29 +16,29 @@ public abstract class EntityDefRefFieldDef_ {
 	public static final String FIELD_DEF_CODE = "fieldDefCode";
 	public static final String ENTITY_DEF_ID = "entityDefId";
 
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.view.EntityDefRefFieldDef#fieldDefId
+	 * @see EntityDefRefFieldDef#fieldDefId
 	 **/
 	public static volatile SingularAttribute<EntityDefRefFieldDef, UUID> fieldDefId;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.view.EntityDefRefFieldDef#entityDefCode
+	 * @see EntityDefRefFieldDef#entityDefCode
 	 **/
 	public static volatile SingularAttribute<EntityDefRefFieldDef, String> entityDefCode;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.view.EntityDefRefFieldDef#fieldDefCode
+	 * @see EntityDefRefFieldDef#fieldDefCode
 	 **/
 	public static volatile SingularAttribute<EntityDefRefFieldDef, String> fieldDefCode;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.view.EntityDefRefFieldDef#entityDefId
+	 * @see EntityDefRefFieldDef#entityDefId
 	 **/
 	public static volatile SingularAttribute<EntityDefRefFieldDef, UUID> entityDefId;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.view.EntityDefRefFieldDef
+	 * @see EntityDefRefFieldDef
 	 **/
 	public static volatile EntityType<EntityDefRefFieldDef> class_;
 

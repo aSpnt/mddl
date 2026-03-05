@@ -1,27 +1,28 @@
-package ru.softmachine.odyssey.backend.cms.entity.field;
+package com.aspnt.mddl.entity.field;
 
+import com.aspnt.mddl.entity.field.FieldDef;
 import jakarta.annotation.Generated;
 import jakarta.persistence.metamodel.EntityType;
 import jakarta.persistence.metamodel.ListAttribute;
 import jakarta.persistence.metamodel.SingularAttribute;
 import jakarta.persistence.metamodel.StaticMetamodel;
 import java.util.List;
-import ru.softmachine.odyssey.backend.cms.dto.base.FieldType;
-import ru.softmachine.odyssey.backend.cms.dto.base.FieldViewType;
-import ru.softmachine.odyssey.backend.cms.dto.field.FieldDefType;
-import ru.softmachine.odyssey.backend.cms.entity.DictionaryExternal;
-import ru.softmachine.odyssey.backend.cms.entity.Entity;
-import ru.softmachine.odyssey.backend.cms.entity.EntityDefMode;
-import ru.softmachine.odyssey.backend.cms.entity.ExternalConnection;
-import ru.softmachine.odyssey.backend.cms.entity.FieldDefContainer;
-import ru.softmachine.odyssey.backend.cms.entity.FieldValue;
-import ru.softmachine.odyssey.backend.cms.entity.FieldValueTransition;
-import ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef;
-import ru.softmachine.odyssey.backend.cms.entity.validation.FieldValidation;
+import com.aspnt.mddl.dto.base.FieldType;
+import com.aspnt.mddl.dto.base.FieldViewType;
+import com.aspnt.mddl.dto.field.FieldDefType;
+import com.aspnt.mddl.entity.DictionaryExternal;
+import com.aspnt.mddl.entity.Entity;
+import com.aspnt.mddl.entity.EntityDefMode;
+import com.aspnt.mddl.entity.ExternalConnection;
+import com.aspnt.mddl.entity.FieldDefContainer;
+import com.aspnt.mddl.entity.FieldValue;
+import com.aspnt.mddl.entity.FieldValueTransition;
+import com.aspnt.mddl.entity.entitydef.EntityDef;
+import com.aspnt.mddl.entity.validation.FieldValidation;
 
 @StaticMetamodel(FieldDef.class)
 @Generated("org.hibernate.processor.HibernateProcessor")
-public abstract class FieldDef_ extends ru.softmachine.odyssey.backend.cms.entity.base.BaseEntity_ {
+public abstract class FieldDef_ extends com.aspnt.mddl.entity.base.BaseEntity_ {
 
 	public static final String CONTAINER = "container";
 	public static final String FIELD_TRANSITIONS = "fieldTransitions";
@@ -94,359 +95,359 @@ public abstract class FieldDef_ extends ru.softmachine.odyssey.backend.cms.entit
 	public static final String DEFAULT_REF_FILTER_VALUES = "defaultRefFilterValues";
 	public static final String SPAN = "span";
 
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#container
+	 * @see FieldDef#container
 	 **/
 	public static volatile SingularAttribute<FieldDef, FieldDefContainer> container;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#fieldTransitions
+	 * @see FieldDef#fieldTransitions
 	 **/
 	public static volatile ListAttribute<FieldDef, FieldValueTransition> fieldTransitions;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#allowCollectionRestriction
+	 * @see FieldDef#allowCollectionRestriction
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> allowCollectionRestriction;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#compressionEnabled
+	 * @see FieldDef#compressionEnabled
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> compressionEnabled;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#visibleShort
+	 * @see FieldDef#visibleShort
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> visibleShort;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#exampleText
+	 * @see FieldDef#exampleText
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> exampleText;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#prefix
+	 * @see FieldDef#prefix
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> prefix;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#orderInTable
+	 * @see FieldDef#orderInTable
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> orderInTable;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#type
+	 * @see FieldDef#type
 	 **/
 	public static volatile SingularAttribute<FieldDef, FieldType> type;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#suffix
+	 * @see FieldDef#suffix
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> suffix;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#ftsLanguage
+	 * @see FieldDef#ftsLanguage
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> ftsLanguage;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#forSlugGenerator
+	 * @see FieldDef#forSlugGenerator
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> forSlugGenerator;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#required
+	 * @see FieldDef#required
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> required;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#mode
+	 * @see FieldDef#mode
 	 **/
 	public static volatile SingularAttribute<FieldDef, EntityDefMode> mode;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#tableSeq
+	 * @see FieldDef#tableSeq
 	 **/
 	public static volatile SingularAttribute<FieldDef, Integer> tableSeq;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#externalFilterLowBoundaryName
+	 * @see FieldDef#externalFilterLowBoundaryName
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> externalFilterLowBoundaryName;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#defaultTextValue
+	 * @see FieldDef#defaultTextValue
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> defaultTextValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#visibleForm
+	 * @see FieldDef#visibleForm
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> visibleForm;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#externalFilterUpBoundaryName
+	 * @see FieldDef#externalFilterUpBoundaryName
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> externalFilterUpBoundaryName;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#collectionRef
+	 * @see FieldDef#collectionRef
 	 **/
 	public static volatile SingularAttribute<FieldDef, EntityDef> collectionRef;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#visibleListView
+	 * @see FieldDef#visibleListView
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> visibleListView;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#defaultIntValue
+	 * @see FieldDef#defaultIntValue
 	 **/
 	public static volatile SingularAttribute<FieldDef, Long> defaultIntValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#visibleHeader
+	 * @see FieldDef#visibleHeader
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> visibleHeader;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#useSearchFilter
+	 * @see FieldDef#useSearchFilter
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> useSearchFilter;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#dictionaryExternal
+	 * @see FieldDef#dictionaryExternal
 	 **/
 	public static volatile SingularAttribute<FieldDef, DictionaryExternal> dictionaryExternal;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#setCurrentDateAsDefault
+	 * @see FieldDef#setCurrentDateAsDefault
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> setCurrentDateAsDefault;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#serializeEnum
+	 * @see FieldDef#serializeEnum
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> serializeEnum;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#canChangeOrder
+	 * @see FieldDef#canChangeOrder
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> canChangeOrder;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#serializeFull
+	 * @see FieldDef#serializeFull
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> serializeFull;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#fieldDefType
+	 * @see FieldDef#fieldDefType
 	 **/
 	public static volatile SingularAttribute<FieldDef, FieldDefType> fieldDefType;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#defaultBooleanValue
+	 * @see FieldDef#defaultBooleanValue
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> defaultBooleanValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#ftsPriority
+	 * @see FieldDef#ftsPriority
 	 **/
 	public static volatile SingularAttribute<FieldDef, Character> ftsPriority;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#allowCollectionRemove
+	 * @see FieldDef#allowCollectionRemove
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> allowCollectionRemove;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#resetDependencyFieldCode
+	 * @see FieldDef#resetDependencyFieldCode
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> resetDependencyFieldCode;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#allowedTemplates
+	 * @see FieldDef#allowedTemplates
 	 **/
 	public static volatile SingularAttribute<FieldDef, List<String>> allowedTemplates;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#name
+	 * @see FieldDef#name
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> name;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#viewType
+	 * @see FieldDef#viewType
 	 **/
 	public static volatile SingularAttribute<FieldDef, FieldViewType> viewType;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#externalFilterName
+	 * @see FieldDef#externalFilterName
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> externalFilterName;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#hideOnCreate
+	 * @see FieldDef#hideOnCreate
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> hideOnCreate;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#externalConnection
+	 * @see FieldDef#externalConnection
 	 **/
 	public static volatile SingularAttribute<FieldDef, ExternalConnection> externalConnection;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#note
+	 * @see FieldDef#note
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> note;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#disableCondition
+	 * @see FieldDef#disableCondition
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> disableCondition;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#code
+	 * @see FieldDef#code
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> code;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#visibleTable
+	 * @see FieldDef#visibleTable
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> visibleTable;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#defaultDoubleValue
+	 * @see FieldDef#defaultDoubleValue
 	 **/
 	public static volatile SingularAttribute<FieldDef, Double> defaultDoubleValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#tableWidth
+	 * @see FieldDef#tableWidth
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> tableWidth;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#values
+	 * @see FieldDef#values
 	 **/
 	public static volatile ListAttribute<FieldDef, FieldValue> values;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#defaultRefValue
+	 * @see FieldDef#defaultRefValue
 	 **/
 	public static volatile SingularAttribute<FieldDef, Entity> defaultRefValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#defaultOrder
+	 * @see FieldDef#defaultOrder
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> defaultOrder;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#compressionLimit
+	 * @see FieldDef#compressionLimit
 	 **/
 	public static volatile SingularAttribute<FieldDef, Integer> compressionLimit;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#disabled
+	 * @see FieldDef#disabled
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> disabled;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#placeholder
+	 * @see FieldDef#placeholder
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> placeholder;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef
+	 * @see FieldDef
 	 **/
 	public static volatile EntityType<FieldDef> class_;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#seq
+	 * @see FieldDef#seq
 	 **/
 	public static volatile SingularAttribute<FieldDef, Integer> seq;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#externalConnectionBatch
+	 * @see FieldDef#externalConnectionBatch
 	 **/
 	public static volatile SingularAttribute<FieldDef, ExternalConnection> externalConnectionBatch;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#labelInside
+	 * @see FieldDef#labelInside
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> labelInside;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#createDefault
+	 * @see FieldDef#createDefault
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> createDefault;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#visibleCondition
+	 * @see FieldDef#visibleCondition
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> visibleCondition;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#expression
+	 * @see FieldDef#expression
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> expression;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#multiple
+	 * @see FieldDef#multiple
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> multiple;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#predefinedSelections
+	 * @see FieldDef#predefinedSelections
 	 **/
 	public static volatile SingularAttribute<FieldDef, List<String>> predefinedSelections;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#useFilter
+	 * @see FieldDef#useFilter
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> useFilter;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#compactTableView
+	 * @see FieldDef#compactTableView
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> compactTableView;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#fieldValidations
+	 * @see FieldDef#fieldValidations
 	 **/
 	public static volatile ListAttribute<FieldDef, FieldValidation> fieldValidations;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#visibleItemCondition
+	 * @see FieldDef#visibleItemCondition
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> visibleItemCondition;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#refCollectionFieldCode
+	 * @see FieldDef#refCollectionFieldCode
 	 **/
 	public static volatile SingularAttribute<FieldDef, String> refCollectionFieldCode;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#visibleTemplate
+	 * @see FieldDef#visibleTemplate
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> visibleTemplate;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#allowDuplicates
+	 * @see FieldDef#allowDuplicates
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> allowDuplicates;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#visibleView
+	 * @see FieldDef#visibleView
 	 **/
 	public static volatile SingularAttribute<FieldDef, Boolean> visibleView;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#defaultRefFilterValues
+	 * @see FieldDef#defaultRefFilterValues
 	 **/
 	public static volatile SingularAttribute<FieldDef, List<String>> defaultRefFilterValues;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.field.FieldDef#span
+	 * @see FieldDef#span
 	 **/
 	public static volatile SingularAttribute<FieldDef, Integer> span;
 

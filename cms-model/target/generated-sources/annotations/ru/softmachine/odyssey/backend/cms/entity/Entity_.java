@@ -1,16 +1,18 @@
-package ru.softmachine.odyssey.backend.cms.entity;
+package com.aspnt.mddl.entity;
 
+import com.aspnt.mddl.entity.Entity;
+import com.aspnt.mddl.entity.FieldValue;
 import jakarta.annotation.Generated;
 import jakarta.persistence.metamodel.EntityType;
 import jakarta.persistence.metamodel.ListAttribute;
 import jakarta.persistence.metamodel.SingularAttribute;
 import jakarta.persistence.metamodel.StaticMetamodel;
 import java.time.ZonedDateTime;
-import ru.softmachine.odyssey.backend.cms.entity.entitydef.EntityDef;
+import com.aspnt.mddl.entity.entitydef.EntityDef;
 
 @StaticMetamodel(Entity.class)
 @Generated("org.hibernate.processor.HibernateProcessor")
-public abstract class Entity_ extends ru.softmachine.odyssey.backend.cms.entity.base.BaseEntity_ {
+public abstract class Entity_ extends com.aspnt.mddl.entity.base.BaseEntity_ {
 
 	public static final String AUTHOR_EMAIL = "authorEmail";
 	public static final String ENTITY_TEMPLATE_NAME = "entityTemplateName";
@@ -26,74 +28,74 @@ public abstract class Entity_ extends ru.softmachine.odyssey.backend.cms.entity.
 	public static final String DELETE_LOCK = "deleteLock";
 	public static final String FTS_VECTOR = "ftsVector";
 
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.Entity#authorEmail
+	 * @see Entity#authorEmail
 	 **/
 	public static volatile SingularAttribute<Entity, String> authorEmail;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.Entity#entityTemplateName
+	 * @see Entity#entityTemplateName
 	 **/
 	public static volatile SingularAttribute<Entity, String> entityTemplateName;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.Entity#author
+	 * @see Entity#author
 	 **/
 	public static volatile SingularAttribute<Entity, String> author;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.Entity#values
+	 * @see Entity#values
 	 **/
 	public static volatile ListAttribute<Entity, FieldValue> values;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.Entity#slugLock
+	 * @see Entity#slugLock
 	 **/
 	public static volatile SingularAttribute<Entity, Boolean> slugLock;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.Entity#active
+	 * @see Entity#active
 	 **/
 	public static volatile SingularAttribute<Entity, Boolean> active;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.Entity#lastStatusChangeTs
+	 * @see Entity#lastStatusChangeTs
 	 **/
 	public static volatile SingularAttribute<Entity, ZonedDateTime> lastStatusChangeTs;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.Entity#version
+	 * @see Entity#version
 	 **/
 	public static volatile SingularAttribute<Entity, Long> version;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.Entity#entityDef
+	 * @see Entity#entityDef
 	 **/
 	public static volatile SingularAttribute<Entity, EntityDef> entityDef;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.Entity
+	 * @see Entity
 	 **/
 	public static volatile EntityType<Entity> class_;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.Entity#slug
+	 * @see Entity#slug
 	 **/
 	public static volatile SingularAttribute<Entity, String> slug;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.Entity#seq
+	 * @see Entity#seq
 	 **/
 	public static volatile SingularAttribute<Entity, Integer> seq;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.Entity#deleteLock
+	 * @see Entity#deleteLock
 	 **/
 	public static volatile SingularAttribute<Entity, Boolean> deleteLock;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.Entity#ftsVector
+	 * @see Entity#ftsVector
 	 **/
 	public static volatile SingularAttribute<Entity, String> ftsVector;
 

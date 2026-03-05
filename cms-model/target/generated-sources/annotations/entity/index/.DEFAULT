@@ -1,1 +1,1 @@
-ru.softmachine.odyssey.backend.cms.dto.GlobalSearchType ru.softmachine.odyssey.backend.cms.dto.provider.ProviderType 
+com.aspnt.mddl.dto.GlobalSearchType com.aspnt.mddl.dto.provider.ProviderType 

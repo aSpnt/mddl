@@ -1,5 +1,10 @@
-package ru.softmachine.odyssey.backend.cms.entity;
+package com.aspnt.mddl.entity;
 
+import com.aspnt.mddl.entity.Entity;
+import com.aspnt.mddl.entity.EntityTemplate;
+import com.aspnt.mddl.entity.ExternalDictionaryValue;
+import com.aspnt.mddl.entity.FieldGeometryValue;
+import com.aspnt.mddl.entity.FieldValue;
 import jakarta.annotation.Generated;
 import jakarta.persistence.metamodel.EntityType;
 import jakarta.persistence.metamodel.ListAttribute;
@@ -9,11 +14,11 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.ZonedDateTime;
 import java.util.List;
-import ru.softmachine.odyssey.backend.cms.entity.field.FieldDef;
+import com.aspnt.mddl.entity.field.FieldDef;
 
 @StaticMetamodel(FieldValue.class)
 @Generated("org.hibernate.processor.HibernateProcessor")
-public abstract class FieldValue_ extends ru.softmachine.odyssey.backend.cms.entity.base.BaseEntity_ {
+public abstract class FieldValue_ extends com.aspnt.mddl.entity.base.BaseEntity_ {
 
 	public static final String DATE_VALUE = "dateValue";
 	public static final String GEOMETRY_VALUES = "geometryValues";
@@ -41,134 +46,134 @@ public abstract class FieldValue_ extends ru.softmachine.odyssey.backend.cms.ent
 	public static final String BOOLEAN_VALUE = "booleanValue";
 	public static final String ENTITY = "entity";
 
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#dateValue
+	 * @see FieldValue#dateValue
 	 **/
 	public static volatile SingularAttribute<FieldValue, LocalDate> dateValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#geometryValues
+	 * @see FieldValue#geometryValues
 	 **/
 	public static volatile ListAttribute<FieldValue, FieldGeometryValue> geometryValues;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#fieldDef
+	 * @see FieldValue#fieldDef
 	 **/
 	public static volatile SingularAttribute<FieldValue, FieldDef> fieldDef;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#disabledOverride
+	 * @see FieldValue#disabledOverride
 	 **/
 	public static volatile SingularAttribute<FieldValue, Boolean> disabledOverride;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#timeValue
+	 * @see FieldValue#timeValue
 	 **/
 	public static volatile SingularAttribute<FieldValue, LocalTime> timeValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#refValue
+	 * @see FieldValue#refValue
 	 **/
 	public static volatile SingularAttribute<FieldValue, Entity> refValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#refValueCollection
+	 * @see FieldValue#refValueCollection
 	 **/
 	public static volatile ListAttribute<FieldValue, Entity> refValueCollection;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#visibleOverride
+	 * @see FieldValue#visibleOverride
 	 **/
 	public static volatile SingularAttribute<FieldValue, Boolean> visibleOverride;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#entityValue
+	 * @see FieldValue#entityValue
 	 **/
 	public static volatile SingularAttribute<FieldValue, Entity> entityValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#allowTemplatesOverride
+	 * @see FieldValue#allowTemplatesOverride
 	 **/
 	public static volatile SingularAttribute<FieldValue, List<String>> allowTemplatesOverride;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#seqOverride
+	 * @see FieldValue#seqOverride
 	 **/
 	public static volatile SingularAttribute<FieldValue, Integer> seqOverride;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue
+	 * @see FieldValue
 	 **/
 	public static volatile EntityType<FieldValue> class_;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#requiredOverride
+	 * @see FieldValue#requiredOverride
 	 **/
 	public static volatile SingularAttribute<FieldValue, Boolean> requiredOverride;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#textValue
+	 * @see FieldValue#textValue
 	 **/
 	public static volatile SingularAttribute<FieldValue, String> textValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#intValue
+	 * @see FieldValue#intValue
 	 **/
 	public static volatile SingularAttribute<FieldValue, Long> intValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#doubleValue
+	 * @see FieldValue#doubleValue
 	 **/
 	public static volatile SingularAttribute<FieldValue, Double> doubleValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#arrayDate
+	 * @see FieldValue#arrayDate
 	 **/
 	public static volatile SingularAttribute<FieldValue, List<LocalDate>> arrayDate;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#predefinedSelectionsOverride
+	 * @see FieldValue#predefinedSelectionsOverride
 	 **/
 	public static volatile SingularAttribute<FieldValue, List<String>> predefinedSelectionsOverride;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#arrayDateTime
+	 * @see FieldValue#arrayDateTime
 	 **/
 	public static volatile SingularAttribute<FieldValue, List<ZonedDateTime>> arrayDateTime;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#entityTemplate
+	 * @see FieldValue#entityTemplate
 	 **/
 	public static volatile SingularAttribute<FieldValue, EntityTemplate> entityTemplate;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#externalValues
+	 * @see FieldValue#externalValues
 	 **/
 	public static volatile ListAttribute<FieldValue, ExternalDictionaryValue> externalValues;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#entities
+	 * @see FieldValue#entities
 	 **/
 	public static volatile ListAttribute<FieldValue, Entity> entities;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#datetimeValue
+	 * @see FieldValue#datetimeValue
 	 **/
 	public static volatile SingularAttribute<FieldValue, ZonedDateTime> datetimeValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#arrayText
+	 * @see FieldValue#arrayText
 	 **/
 	public static volatile SingularAttribute<FieldValue, List<String>> arrayText;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#booleanValue
+	 * @see FieldValue#booleanValue
 	 **/
 	public static volatile SingularAttribute<FieldValue, Boolean> booleanValue;
-	
+
 	/**
-	 * @see ru.softmachine.odyssey.backend.cms.entity.FieldValue#entity
+	 * @see FieldValue#entity
 	 **/
 	public static volatile SingularAttribute<FieldValue, Entity> entity;
 
