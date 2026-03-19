@@ -4,6 +4,7 @@ com/aspnt/mddl/utils/compression/CompressionUtils.class
 com/aspnt/mddl/service/DictionaryService.class
 com/aspnt/mddl/converter/FieldValueConverterImpl.class
 com/aspnt/mddl/converter/FieldValidationConverter.class
+com/aspnt/mddl/converter/filter/EntityFilterConverter.class
 com/aspnt/mddl/security/UserInfo.class
 com/aspnt/mddl/validation/impl/MaxValidator$1.class
 com/aspnt/mddl/converter/EntityUtilsConverterImpl.class
@@ -34,6 +35,7 @@ com/aspnt/mddl/converter/DictionaryExternalConverterImpl.class
 com/aspnt/mddl/converter/EntityConverter$1.class
 com/aspnt/mddl/converter/FieldValueConverter.class
 com/aspnt/mddl/converter/FieldGeometryValueConverter.class
+com/aspnt/mddl/converter/filter/EntityFilterConverterImpl.class
 com/aspnt/mddl/evaluation/spel/FilteredCollectionProcessor.class
 com/aspnt/mddl/validation/impl/MaxQuantityValidator$1.class
 com/aspnt/mddl/cache/EntityDefCacheResolver.class
@@ -58,6 +60,7 @@ com/aspnt/mddl/validation/impl/MinValidator.class
 com/aspnt/mddl/config/CacheConfig.class
 com/aspnt/mddl/converter/base/BaseVersionConverter.class
 com/aspnt/mddl/validation/impl/PhoneValidator.class
+com/aspnt/mddl/converter/filter/EntityFilterConverter$1.class
 com/aspnt/mddl/validation/impl/ExpressionValidator.class
 com/aspnt/mddl/converter/FieldGeometryValueConverterImpl.class
 com/aspnt/mddl/converter/EntityUtilsConverter.class

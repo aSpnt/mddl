@@ -2,7 +2,6 @@ package com.aspnt.mddl;
 
 import org.jeasy.random.EasyRandom;
 import org.jeasy.random.EasyRandomParameters;
-import org.jeasy.random.randomizers.AbstractRandomizer;
 import org.jeasy.random.randomizers.range.IntegerRangeRandomizer;
 import org.jeasy.random.randomizers.time.InstantRandomizer;
 import org.jeasy.random.randomizers.time.LocalDateTimeRandomizer;
@@ -10,7 +9,6 @@ import org.jeasy.random.randomizers.time.OffsetDateTimeRandomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.annotation.Id;
-import org.testcontainers.shaded.org.apache.commons.lang3.RandomStringUtils;
 
 import java.nio.charset.StandardCharsets;
 import java.time.Instant;

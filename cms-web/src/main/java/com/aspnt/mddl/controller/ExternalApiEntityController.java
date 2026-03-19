@@ -1,5 +1,13 @@
 package com.aspnt.mddl.controller;
 
+import com.aspnt.mddl.dto.api.ExternalApiEntityRequest;
+import com.aspnt.mddl.dto.api.ExternalApiEntityResponse;
+import com.aspnt.mddl.dto.api.ExternalApiErrorResponse;
+import com.aspnt.mddl.dto.api.ExternalApiIdListRequest;
+import com.aspnt.mddl.dto.api.ExternalApiListBaseEntity;
+import com.aspnt.mddl.dto.api.ExternalApiPageFilter;
+import com.aspnt.mddl.dto.base.BaseSlugRef;
+import com.aspnt.mddl.dto.api.ExternalApiSlugListRequest;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -17,15 +25,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.aspnt.mddl.converter.filter.EntityFilterConverter;
 import com.aspnt.mddl.service.entity.EntityService;
-import ru.softmachine.odyssey.backend.model.UPRErrorResponse;
-import ru.softmachine.odyssey.backend.model.UPRPageFilter;
-import ru.softmachine.odyssey.backend.model.UprCmsEntityRequest;
-import ru.softmachine.odyssey.backend.model.UprCmsEntityResponse;
-import ru.softmachine.odyssey.backend.model.UprCmsIdListRequest;
-import ru.softmachine.odyssey.backend.model.UprCmsListBaseEntity;
-import ru.softmachine.odyssey.backend.model.UprCmsSlugBaseEntity;
-import ru.softmachine.odyssey.backend.model.UprCmsSlugListRequest;
-import ru.softmachine.odyssey.backend.services.api.UprCmsApi;
 
 import java.util.Map;
 import java.util.Optional;
@@ -33,7 +32,7 @@ import java.util.UUID;
 
 @Controller
 @RequiredArgsConstructor
-public class UprEntityController implements UprCmsApi {
+public class ExternalApiEntityController {
 
     private final EntityService entityService;
     private final EntityFilterConverter entityFilterConverter;
@@ -44,7 +43,7 @@ public class UprEntityController implements UprCmsApi {
     @Operation(
             operationId = "saveEntityByMap",
             summary = "Сохранение сущности из карты значений по коду дефиниции",
-            tags = {"upr-cms"},
+            tags = {"mddl"},
             responses = {@ApiResponse(
                     responseCode = "200",
                     description = "Сохраненная сущность",
@@ -60,7 +59,7 @@ public class UprEntityController implements UprCmsApi {
                     content = {@Content(
                             mediaType = "application/json",
                             schema = @Schema(
-                                    implementation = UPRErrorResponse.class
+                                    implementation = ExternalApiErrorResponse.class
                             )
                     )}
             )}
@@ -79,7 +78,7 @@ public class UprEntityController implements UprCmsApi {
     @Operation(
             operationId = "saveEntityByMap",
             summary = "Обновление сущности из карты значений по коду дефиниции",
-            tags = {"upr-cms"},
+            tags = {"mddl"},
             responses = {@ApiResponse(
                     responseCode = "200",
                     description = "Сохраненная сущность",
@@ -95,7 +94,7 @@ public class UprEntityController implements UprCmsApi {
                     content = {@Content(
                             mediaType = "application/json",
                             schema = @Schema(
-                                    implementation = UPRErrorResponse.class
+                                    implementation = ExternalApiErrorResponse.class
                             )
                     )}
             )}
@@ -115,7 +114,7 @@ public class UprEntityController implements UprCmsApi {
     @Operation(
             operationId = "deleteEntityByDefCodeAndId",
             summary = "Удаление сущности по коду дефиниции и идентификатору",
-            tags = {"upr-cms"},
+            tags = {"mddl"},
             responses = {@ApiResponse(
                     responseCode = "204",
                     description = "Удаление успешно",
@@ -131,7 +130,7 @@ public class UprEntityController implements UprCmsApi {
                     content = {@Content(
                             mediaType = "application/json",
                             schema = @Schema(
-                                    implementation = UPRErrorResponse.class
+                                    implementation = ExternalApiErrorResponse.class
                             )
                     )}
             )}
@@ -148,9 +147,8 @@ public class UprEntityController implements UprCmsApi {
         return ResponseEntity.noContent().build();
     }
 
-    @Override
-    public ResponseEntity<UprCmsEntityResponse> findEntities(
-            @Validated UprCmsEntityRequest uprCmsEntityRequest
+    public ResponseEntity<ExternalApiEntityResponse> findEntities(
+            @Validated ExternalApiEntityRequest uprCmsEntityRequest
     ) {
         var result = entityService.getAllEntityByEntityDefCode(
                 uprCmsEntityRequest.getEntityDefCode(),
@@ -160,46 +158,43 @@ public class UprEntityController implements UprCmsApi {
                         uprCmsEntityRequest),
                 PageRequest.of(
                         Optional.ofNullable(uprCmsEntityRequest.getPageFilter())
-                                .map(UPRPageFilter::getPageIndex)
+                                .map(ExternalApiPageFilter::getPageIndex)
                                 .orElse(0),
                         Optional.ofNullable(uprCmsEntityRequest.getPageFilter())
-                                .map(UPRPageFilter::getPageSize)
+                                .map(ExternalApiPageFilter::getPageSize)
                                 .orElse(defaultPageSize)
                         // TODO: ограничение стоит добавить
                 )
         );
         return ResponseEntity.ok(
-                new UprCmsEntityResponse()
+                new ExternalApiEntityResponse()
                         .items(result.toList())
                         .totalCount(result.getTotalElements())
         );
     }
 
-    @Override
-    public ResponseEntity<UprCmsEntityResponse> findEntitiesByIdList(
+    public ResponseEntity<ExternalApiEntityResponse> findEntitiesByIdList(
             String entityDefCode,
-            UprCmsIdListRequest uprCmsIdListRequest
+            ExternalApiIdListRequest uprCmsIdListRequest
     ) {
         return ResponseEntity.ok(
-                new UprCmsEntityResponse()
+                new ExternalApiEntityResponse()
                         .items(entityService.getAllEntityByEntityDefAndIdList(
                                 entityDefCode, uprCmsIdListRequest.getIds()
                         )));
     }
 
-    @Override
-    public ResponseEntity<UprCmsEntityResponse> findEntitiesBySlugList(
+    public ResponseEntity<ExternalApiEntityResponse> findEntitiesBySlugList(
             String entityDefCode,
-            @Validated UprCmsSlugListRequest uprCmsSlugListRequest
+            @Validated ExternalApiSlugListRequest uprCmsSlugListRequest
     ) {
         return ResponseEntity.ok(
-                new UprCmsEntityResponse()
+                new ExternalApiEntityResponse()
                         .items(entityService.getEntityByEntityDefAndSlugList(
                                 entityDefCode, uprCmsSlugListRequest.getSlugs()
                         )));
     }
 
-    @Override
     public ResponseEntity<Map<String, Object>> getEntity(String entityDefCode, String entityId) {
         return ResponseEntity.ok(
                 entityService.getEntityByEntityDefCode(
@@ -210,7 +205,7 @@ public class UprEntityController implements UprCmsApi {
     @Operation(
             operationId = "getSingletonEntity",
             summary = "Запрос единственной сущности (синглтона) по коду дефиниции",
-            tags = {"upr-cms"},
+            tags = {"mddl"},
             responses = {@ApiResponse(
                     responseCode = "200",
                     description = "Найденная по коду дефиниции сущность",
@@ -229,7 +224,7 @@ public class UprEntityController implements UprCmsApi {
                     content = {@Content(
                             mediaType = "application/json",
                             schema = @Schema(
-                                    implementation = UPRErrorResponse.class
+                                    implementation = ExternalApiErrorResponse.class
                             )
                     )}
             )}
@@ -247,7 +242,6 @@ public class UprEntityController implements UprCmsApi {
                 ));
     }
 
-    @Override
     public ResponseEntity<Map<String, Object>> getEntityBySlug(String entityDefCode, String entitySlug) {
         return ResponseEntity.ok(
                 entityService.getEntityByEntityDefAndSlug(
@@ -255,20 +249,18 @@ public class UprEntityController implements UprCmsApi {
                 ));
     }
 
-    @Override
-    public ResponseEntity<UprCmsSlugBaseEntity> getIdEntityBySlug(String entityDefCode, String entitySlug) {
+    public ResponseEntity<BaseSlugRef> getIdEntityBySlug(String entityDefCode, String entitySlug) {
         return ResponseEntity.ok(
                 entityService.getBaseSlugEntityByEntityDefAndSlug(entityDefCode, entitySlug)
         );
     }
 
-    @Override
-    public ResponseEntity<UprCmsListBaseEntity> getSlugListByIdList(
+    public ResponseEntity<ExternalApiListBaseEntity> getSlugListByIdList(
             String entityDefCode,
-            UprCmsIdListRequest uprCmsIdListRequest
+            ExternalApiIdListRequest idListRequest
     ) {
         return ResponseEntity.ok(
-                new UprCmsListBaseEntity().items(
-                        entityService.getSlugListByIdList(entityDefCode, uprCmsIdListRequest.getIds())));
+                new ExternalApiListBaseEntity().items(
+                        entityService.getSlugListByIdList(entityDefCode, idListRequest.getIds())));
     }
 }

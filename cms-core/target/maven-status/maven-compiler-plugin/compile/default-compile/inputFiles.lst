@@ -3,6 +3,7 @@
 /Users/anatolijivanov/TOUR/MY/mddl/cms-core/src/main/java/com/aspnt/mddl/provider/impl/RestEntityStorageProvider.java
 /Users/anatolijivanov/TOUR/MY/mddl/cms-core/src/main/java/com/aspnt/mddl/validation/impl/MaxValidator.java
 /Users/anatolijivanov/TOUR/MY/mddl/cms-core/src/main/java/com/aspnt/mddl/evaluation/template/TemplateService.java
+/Users/anatolijivanov/TOUR/MY/mddl/cms-core/src/main/java/com/aspnt/mddl/converter/filter/EntityFilterConverter.java
 /Users/anatolijivanov/TOUR/MY/mddl/cms-core/src/main/java/com/aspnt/mddl/converter/DictionaryExternalHeaderConverter.java
 /Users/anatolijivanov/TOUR/MY/mddl/cms-core/src/main/java/com/aspnt/mddl/service/storage/provider/S3UploadProvider.java
 /Users/anatolijivanov/TOUR/MY/mddl/cms-core/src/main/java/com/aspnt/mddl/validation/impl/MinValidator.java

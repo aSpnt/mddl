@@ -6,7 +6,6 @@ import lombok.SneakyThrows;
 import org.hamcrest.Matcher;
 import org.jeasy.random.EasyRandom;
 import org.junit.jupiter.api.BeforeEach;
-import org.mockito.internal.hamcrest.HamcrestArgumentMatcher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -20,7 +19,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 import com.aspnt.mddl.dsl.Given;
-import ru.softmachine.odyssey.backend.test.matcher.Matchers;
 
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
@@ -28,7 +26,6 @@ import java.util.List;
 import java.util.Map;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.mockito.ArgumentMatchers.argThat;
 
 @AutoConfigureMockMvc(print = MockMvcPrint.DEFAULT)
 @AutoConfigureWireMock(port = 0)
@@ -95,10 +92,6 @@ public abstract class TestBase {
                                 .findAny()
                                 .orElseThrow(() -> new AssertionError("Item not found " + keyMatcher))
                 );
-    }
-
-    protected static <T> T withId(String id) {
-        return argThat(new HamcrestArgumentMatcher<>(Matchers.hasId(id)));
     }
 
     protected static String toString(OffsetDateTime dt) {

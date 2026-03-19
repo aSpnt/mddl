@@ -14,7 +14,7 @@ import java.util.UUID;
 @Component
 public class FileManagementUtils {
 
-    private static final String TAG = "cms_uuid_";
+    private static final String TAG = "mddl_uuid_";
 
     public File getFile() {
         var tempDir = FileUtils.getTempDirectoryPath();

@@ -85,11 +85,9 @@ public class CustomAuthorizationManager<T> implements AuthorizationManager<Metho
     private List<String> buildRequiredActions(MethodInvocation methodInvocation, String defCode) {
         var actions = getHasActionsAnnotation(methodInvocation).map(HasActions::value).get();
 
-        var cmsRequiredActions = Arrays.stream(actions)
+        return Arrays.stream(actions)
                 .map(action -> String.format("%s.%s.%s", actionPrefix, defCode, action.name()
                         .toLowerCase())).toList();
-
-        return cmsRequiredActions;
     }
 
     private void log(Supplier<Authentication> authentication, MethodInvocation methodInvocation) {
